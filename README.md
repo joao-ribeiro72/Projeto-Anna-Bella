@@ -1,7 +1,8 @@
 # Projeto-Anna-Bella
 
 Este é um projeto de uma página simples de modelo fictícia criada para demonstração das linguagens HTML e CSS. A página contém duas seções principais: Home e Campanhas. A seguir, apresentamos uma visão geral do projeto e os componentes. <br>
-**VISITAR A PÁGINA:**http://url.com](https://joao-ribeiro72.github.io/Projeto-Anna-Bella/
+
+**VISITAR A PÁGINA:** http://url.com](https://joao-ribeiro72.github.io/Projeto-Anna-Bella/
 
 
 ## Home
