@@ -1,0 +1,133 @@
+@font-face { /* Importa a fonte Tofes */
+  font-family: Tofes;
+  src: local(Tofes), url(Tofes.ttf)
+}
+
+html { /* Ajuste geral da página */
+  height: 100%;
+  width: 100%;
+}
+
+body { /* Imagem de fundo da página */
+  background-image: url(images/fundo.png);
+}
+
+.texto { /* Estilização do texto */
+  font-family: URW Chancery L, cursive;
+  font-size: 16px;
+}
+
+.header { /* Classe que ajusta o topo da página */
+  display: flex; /* Permite o ajuste do display */
+  justify-content: center;
+  align-items: center; /* Alinha os itens para o centro */
+  width: 90%;
+  height: auto;
+}
+
+@media (min-width: 300px) {
+  .header img {
+    width: 90%; /* Ajuste a largura para telas a partir de 300px */
+  }
+}
+
+@media (min-width: 600px) {
+  .header img {
+    width: 90%; /* Ajuste a largura para telas a partir de 600 px */
+  }
+}
+
+@media (min-width: 1000px) {
+  .header img {
+    width: 100%; /* Ajuste a largura para telas a partir de 1000px */
+  }
+
+}
+
+.container { /* Estilização da div principal */
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu { /* Estilização do menu do topo */
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
+
+.foto { /* Estilização das fotos */
+  width: 50%;
+  height: auto;
+}
+
+.bloco { /* Estilização do bloco de texto */
+  width: 90%;
+  height: auto;
+  background-image: url(images/bloco.png);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Andale Mono, monospace;
+}
+
+.pe { /* Estilização do rodapé */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav { /* Estilização do bloco do menu */
+  width: 90%;
+  background-image: url(images/menu.png);
+  height: 60px;
+  margin: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.nav__menu { /* Modifica o menu */
+  list-style: none; /* Remove o estilo padrão da lista */
+  padding: 0; /* Remove preenchimento */
+  margin: 0; /* Margem */
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex; /* Define o display como flexível */
+  justify-content: center; /* Alinha os itens para o centro */
+}
+
+.nav__menu-item { /* Modifica os itens da caixa (Home, Bio, etc) */
+  position: relative; /* Define que o item do menu (li) será posicionado relativamente ao seu contêiner */
+}
+
+.nav__menu-item > a { /* Modifica os itens da caixa (Home, Bio, etc) */
+  display: block; /* Faz com que o (<a) se comporte como um bloco */
+  padding: 15px 20px; /* Adiciona preenchimento ao item  */
+  color: black; 
+  text-decoration: none;
+  text-transform: uppercase; 
+  font-weight: bold;
+}
+
+.nav__submenu { /* Seleciona o submenu, que é uma lista de itens que aparece quando o item de menu principal é hoverado */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e4d79b;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__submenu-item > a { /* Seleciona qualquer elemento com a classe nav__submenu-item, que são os itens dentro do submenu */
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav__menu-item:hover .nav__submenu { /* Seleciona o submenu quando o item de menu principal (.nav__menu-item) é hoverado */
+  display: block;
+}
